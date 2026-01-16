@@ -89,16 +89,16 @@ const HeroSection = () => {
           transition={{ duration: 1, delay: 0.5 }}
         >
           <motion.div
-            className="mb-8"
+            className="mb-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            <span className="text-[#D8ECF8] text-xl font-mono">&gt; Hello World!</span>
+            <span className="text-[#D8ECF8] text-base md:text-lg font-mono">&gt; Hello World!</span>
           </motion.div>
 
           <motion.h1
-            className="text-6xl md:text-8xl font-bold mb-8 text-white"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 text-white"
             initial={{ scale: 0.8 }}
             animate={{ scale: 1 }}
             transition={{ duration: 1.2, delay: 1 }}
@@ -107,7 +107,7 @@ const HeroSection = () => {
           </motion.h1>
           
           <motion.div
-            className="text-xl md:text-2xl text-gray-300 mb-10 font-mono"
+            className="text-base md:text-lg text-gray-300 mb-6 font-mono"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.3 }}
@@ -124,7 +124,7 @@ const HeroSection = () => {
           </motion.div>
 
           <motion.p
-            className="text-xl text-gray-400 mb-10 max-w-2xl leading-relaxed"
+            className="text-base md:text-lg text-gray-400 mb-6 max-w-2xl leading-relaxed"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1.6 }}
@@ -135,27 +135,27 @@ const HeroSection = () => {
           </motion.p>
 
           <motion.div
-            className="flex flex-wrap gap-6"
+            className="flex flex-wrap gap-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.8 }}
           >
             <AnimatedButton
-              className="bg-gradient-to-r from-[#D8ECF8] to-[#E879F9] text-black px-10 py-5 rounded-full text-xl font-bold shadow-lg hover:shadow-[0_0_30px_#D8ECF8] transition-all duration-300 cursor-pointer whitespace-nowrap"
+              className="bg-gradient-to-r from-[#D8ECF8] to-[#E879F9] text-black px-6 py-3 rounded-full text-base font-bold shadow-lg hover:shadow-[0_0_30px_#D8ECF8] transition-all duration-300 cursor-pointer whitespace-nowrap"
               onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
               icon="ri-gamepad-line"
             >
               Start Game
             </AnimatedButton>
             <AnimatedButton
-              className="bg-white/10 backdrop-blur-sm border-2 border-[#D8ECF8] text-white px-10 py-5 rounded-full text-xl font-bold hover:bg-[#D8ECF8]/20 hover:shadow-[0_0_30px_#D8ECF8] transition-all duration-300 cursor-pointer whitespace-nowrap"
+              className="bg-white/10 backdrop-blur-sm border-2 border-[#D8ECF8] text-white px-6 py-3 rounded-full text-base font-bold hover:bg-[#D8ECF8]/20 hover:shadow-[0_0_30px_#D8ECF8] transition-all duration-300 cursor-pointer whitespace-nowrap"
               onClick={handleDownloadCV}
               icon="ri-download-2-line"
             >
               Download CV
             </AnimatedButton>
             <AnimatedButton
-              className="border-2 border-[#E879F9] text-white px-10 py-5 rounded-full text-xl font-bold hover:bg-[#E879F9]/20 hover:shadow-[0_0_30px_#E879F9] transition-all duration-300 cursor-pointer whitespace-nowrap"
+              className="border-2 border-[#E879F9] text-white px-6 py-3 rounded-full text-base font-bold hover:bg-[#E879F9]/20 hover:shadow-[0_0_30px_#E879F9] transition-all duration-300 cursor-pointer whitespace-nowrap"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               icon="ri-message-3-line"
             >
@@ -166,7 +166,7 @@ const HeroSection = () => {
 
         {/* Right Spline 3D Scene - Smaller on mobile */}
         <motion.div
-          className="w-full md:w-2/5 h-[250px] md:h-[500px] z-10 relative mt-8 md:mt-0"
+          className="w-full md:w-2/5 h-[250px] md:h-[400px] lg:h-[500px] z-10 relative mt-8 md:mt-0"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.7 }}
@@ -175,7 +175,7 @@ const HeroSection = () => {
           <div className="relative w-full h-full overflow-hidden">
             <Spline scene="https://prod.spline.design/KjFeF7h5H8c45-ei/scene.splinecode" />
             {/* Overlay to hide "Built with Spline" */}
-            <div className="absolute bottom-1 right-0 w-48 h-12 bg-black z-20"></div>
+            <div className="absolute bottom-2 right-0 w-48 h-12 bg-black z-20"></div>
           </div>
         </motion.div>
       </div>
