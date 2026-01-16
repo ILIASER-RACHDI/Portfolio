@@ -26,7 +26,7 @@ jobs:
           node-version: 22
           cache: npm
 
-      - run: npm ci
+      - run: npm install
 
       - name: Build with GitHub Pages base path
         run: BASE_PATH=/Portfolio/ npm run build
