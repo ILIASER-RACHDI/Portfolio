@@ -15,29 +15,30 @@ const TestimonialsSection = () => {
   const testimonials = [
   {
     id: 1,
-    name: 'Sarah Chen',
-    title: 'Business Analyst',
-    relationship: 'Project Stakeholder',
+    name: 'Bellouch Chouaib',
+    title: 'Computer Science Student',
+    relationship: 'Group Project Teammate',
     rating: 5,
-    review: 'Ilias was reliable, structured, and easy to work with. He quickly understood business constraints and translated them into effective technical solutions.'
+    review: 'Working with Ilias on group projects was smooth and efficient. He is well-organized, explains his ideas clearly, and always makes sure everyone understands the technical choices.'
   },
   {
     id: 2,
-    name: 'Ahmed Lamouri',
-    title: 'Lead Software Engineer',
-    relationship: 'Technical Lead',
+    name: 'Laouni Hamza',
+    title: 'Engineering Student',
+    relationship: 'Project Partner',
     rating: 5,
-    review: 'Ilias integrated smoothly into the team and delivered clean, maintainable code. He adapts quickly to existing codebases and communicates clearly.'
+    review: 'Ilias is someone you can rely on in a team. He often took the lead on the technical parts and helped others when they were stuck, especially on backend and architecture topics.'
   },
   {
     id: 3,
-    name: 'Emily Watson',
-    title: 'Product Manager',
-    relationship: 'Product Owner',
+    name: 'Aymane Boiti',
+    title: 'Software Engineering Student',
+    relationship: 'Classmate',
     rating: 4,
-    review: 'Ilias communicates clearly and takes feedback seriously. His technical input helped the team deliver features aligned with product expectations.'
+    review: 'Ilias works seriously and stays focused on delivering clean and functional code. He is proactive and always open to feedback during project reviews.'
   }
 ];
+
 
 
   // Auto-play functionality

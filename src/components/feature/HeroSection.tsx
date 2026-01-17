@@ -67,9 +67,8 @@ const HeroSection = () => {
   };
 
   const handleDownloadCV = () => {
-    // Créer un lien de téléchargement temporaire
-    // Vous devrez remplacer cette URL par le lien réel de votre CV
-    const cvUrl = '/cv-ilias.pdf'; // Mettez votre CV dans le dossier public
+    
+    const cvUrl = '/cv-ilias.pdf';
     const link = document.createElement('a');
     link.href = cvUrl;
     link.download = 'CV-Ilias.pdf';
