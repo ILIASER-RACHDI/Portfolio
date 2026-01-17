@@ -68,7 +68,7 @@ const HeroSection = () => {
 
   const handleDownloadCV = () => {
     
-    const cvUrl = '/cv-ilias.pdf';
+    const cvUrl = 'https://iliaser-rachdi.github.io/Portfolio/cv-ilias.pdf';
     const link = document.createElement('a');
     link.href = cvUrl;
     link.download = 'CV-Ilias.pdf';
